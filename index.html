@@ -1,0 +1,85 @@
+<!-- DOCTYPE HMTL -->
+
+<html>
+<head>
+	<!-- Title -->
+  <title>Corona Updates in India</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap Files and Jquery Files -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- Header -->
+	<header class="navbar bg-info">
+		<h3 class="text-danger p-3">COVID-19</h3>
+		<h5 class="text-right text-danger" id="date"></h5>
+	</header>
+	<!-- Content -->
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4 p-4 ">
+		<img src="./image/people.gif"width="240"class="mx-auto d-block">
+		</div>
+		<div class="col-sm-4 p-4">
+		</br></br>
+		<h1 class="text-dark text-center"> Let's Stay Safe & Fight Together Against Cor<img src="./image/c.png" width="40" height="40">ona Virus</h1>
+		
+		</div>
+		<div class="col-sm-4 p-4" id="map_view"></div>
+	</div>	
+	
+	<center>
+	<h3 class="text-danger">COVID-19 LIVE UPDATES OF INDIA</h3>
+	</center>
+	
+	</br>
+	<div id="corona_update"></div>
+	</div>
+<!-- Footer -->
+<footer class="text-center bg-info text-danger"><h5>Desinged By N.Rathu</h5></footer>
+	<script>
+		
+	$.ajax({
+        	url:"https://projects20.000webhostapp.com/corona.php",
+        	method:"POST",
+        	
+        	success:function(result){
+				//Response Result
+				
+        		$("#corona_update").html(result);
+        	}
+    });
+	//Getting Current Date and Time
+	var d=new Date();
+	//Displaying Date in div which has id date
+	document.getElementById("date").innerHTML=d;
+	//Getting the Curretn Location using geolocation API
+	 navigator.geolocation.getCurrentPosition(showPosition);
+	  function showPosition(position) {
+		//Storing latitude and longitude values
+        var latitude=position.coords.latitude;
+        var longitude=position.coords.longitude;
+        var location=latitude+","+longitude;
+		alert(location);
+        //Ajax using Jquery to get Map View
+        $.ajax({
+        	url:"https://projects20.000webhostapp.com/location.php",
+        	method:"POST",
+        	data:{location:location},
+        	success:function(result){
+				//Response Result
+				alert("hi");
+        		$("#map_view").html(result);
+        	}
+        });
+
+
+        	
+      }
+	</script>
+</body>
+</html>
