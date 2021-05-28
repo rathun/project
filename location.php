@@ -1,5 +1,5 @@
 <?php
-//Getting location
+//Getting current location
 $location=$_POST['location'];
 
 //Map view
