@@ -9,7 +9,7 @@
 		</div>
 	</div>
 	<br/>
-	<!-- STATE WISE UPDATE -->
+	<!-- STATE WISE live UPDATE -->
 	<div class="text-center text-danger"><h4>COVID-19 STATE WISE UPDATE</h4></div>
 	<br/>
 	<div class="table-responsive">
