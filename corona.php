@@ -12,8 +12,8 @@
 	<!-- STATE WISE live UPDATE -->
 	<div class="text-center text-danger"><h4>COVID-19 STATE WISE UPDATE</h4></div>
 	<br/>
-	<div class="table table-responsive">
-	<table class="table table-responsive table-bordered text-center bg-light">
+	<div class="table ">
+	<table class="table table-bordered text-center bg-light">
 	
 		<!-- TABLE HEADING -->
 			<tr >
