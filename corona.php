@@ -10,7 +10,7 @@
 	</div>
 	<br/>
 	<!-- STATE WISE live UPDATE -->
-	<div class="text-center text-danger"><h4>COVID-19 STATE WISE nv dfhfugyu UPDATE</h4></div>
+	<div class="text-center text-danger"><h4>COVID-19 STATE WISE  UPDATE</h4></div>
 	<br/>
 	<div class="table table-responsive">
 	<table class="table table-responsive table-bordered text-center bg-light">
@@ -22,7 +22,7 @@
 				<th class="text-info">Confirmed </th>
 				<th class="text-warning">Active </th>
 				<th class="text-success">Recovered </th>
-				<th class="text-danger">Death v no</th>
+				<th class="text-danger">Death no</th>
 	        </tr>
 			
 		
