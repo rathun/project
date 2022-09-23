@@ -13,7 +13,7 @@
 	<div class="text-center text-danger"><h4>COVID-19 STATE WISE  UPDATEs</h4></div>
 	<br/>
 	<div class="table table-responsive">
-	<table class="table table-responsive tab le-bordered text-center bg-light">
+	<table class="table table-responsive tab  le-bordered text-center bg-light">
 	
 		<!-- TABLE HEADING -->
 			<tr >
