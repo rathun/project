@@ -22,7 +22,7 @@
 				<th class="text-info">Confirmed </th>
 				<th class="text-warning">Active </th>
 				<th class="text-success">Recovered </th>
-				<th class="text-danger">Death </th>
+				<th class="text-danger">Death no</th>
 	        </tr>
 			
 		
@@ -32,7 +32,7 @@
 			$active=0;
 			$recover=0;
 			$death=0;
-			//Getting Covid19 details using API
+			//Getting Covid19 details using API logic
 			$data=file_get_contents('https://api.covid19india.org/data.json');
 			$corona=json_decode($data,true);
 			
